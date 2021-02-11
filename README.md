@@ -1,24 +1,9 @@
-# rock-paper-scissors
+<h3>about the project:</h3>
+<ul>
+  <li><a href=https://vuejs-rock-paper-scissors.netlify.app/>⚡ DEMO</a></li>
+</ul>
 
-## Project setup
-```
-npm install
-```
+<img src="https://user-images.githubusercontent.com/40372039/107680069-70f2c600-6cae-11eb-904c-d7781043df53.png"/>
+<img src="https://user-images.githubusercontent.com/40372039/107680074-7223f300-6cae-11eb-9014-a85612bf307e.png"/>
+<img src="https://user-images.githubusercontent.com/40372039/107680076-72bc8980-6cae-11eb-93b0-35a3baa69cec.png"/>
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
-
-### Compiles and minifies for production
-```
-npm run build
-```
-
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
