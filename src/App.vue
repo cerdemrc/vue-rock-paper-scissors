@@ -21,7 +21,7 @@ export default {
   justify-content: center;
   align-items: center;
   color: white;
-  margin-top: 50px;
+  margin-top: 30px;
   font-family: sans-serif;
 }
 </style>
