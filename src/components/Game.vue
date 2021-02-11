@@ -189,7 +189,7 @@ export default {
   }
 
   & .info {
-    margin-top: -50px;
+    margin-top: -80px;
   }
   /* Image Buttons */
 
@@ -198,7 +198,6 @@ export default {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 50px;
 
     & .select {
       display: inline-block;
