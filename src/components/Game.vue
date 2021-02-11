@@ -195,9 +195,6 @@ export default {
 
   & .image-buttons {
     animation: fadeInToLeft 1000ms cubic-bezier(0.22, 0.32, 0, 1.54) 400ms;
-
-    position: fixed;
-    bottom: 250px;
     display: flex;
     justify-content: center;
     align-items: center;
