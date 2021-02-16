@@ -3,7 +3,7 @@
     <h1>Rock Paper Scissors</h1>
     <div class="btn-restart" v-if="finished">
       <h3>{{ this.message }}</h3>
-      <button @click="restart">Yeniden <i class="fas fa-sync-alt"></i></button>
+      <button @click="restart">Again <i class="fas fa-sync-alt"></i></button>
     </div>
     <div class="scor-table">
       <div id="me" class="user">Me</div>
