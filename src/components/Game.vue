@@ -58,9 +58,8 @@ export default {
   },
   methods: {
     onChoice(e) {
-      this.youChoise = this.choices[
-        Math.floor(Math.random() * this.choices.length)
-      ];
+      this.youChoise =
+        this.choices[Math.floor(Math.random() * this.choices.length)];
       this.meChoise = e.currentTarget.id;
       this.game();
     },
@@ -120,7 +119,7 @@ export default {
     letter-spacing: 10px;
     font-family: "Luckiest Guy", cursive;
     text-shadow: 1px 1px 10px black;
-    animation: fadeBottom 1000ms cubic-bezier(0.22, 0.32, 0, 1.54) 400ms;
+    //animation: fadeBottom 1000ms cubic-bezier(0.22, 0.32, 0, 1.54) 400ms;
   }
   & h2 {
     text-align: center;
@@ -170,7 +169,7 @@ export default {
     padding: 15px 20px;
     font-family: sans-serif;
     position: relative;
-    animation: fadeInToRight 1000ms cubic-bezier(0.22, 0.32, 0, 1.54) 400ms;
+    //animation: fadeInToRight 1000ms cubic-bezier(0.22, 0.32, 0, 1.54) 400ms;
 
     & .user {
       padding: 2px 10px;
@@ -205,15 +204,18 @@ export default {
       border-radius: 100%;
 
       & img {
-        width: 200px;
+        width: 100px;
         height: auto;
-        margin: 0 20px;
-        border-radius: 100%;
+        margin: 20px;
+        border-radius: 50%;
+        transform: translate(0, -1px);
+        transition: 0.2s;
       }
 
       &:hover {
         cursor: pointer;
-        background-color: white;
+        transition: 0.2s;
+        transform: translate(0, 2px);
       }
     }
   }

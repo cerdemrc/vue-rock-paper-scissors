@@ -20,7 +20,7 @@ export default {};
   height: auto;
   & .nav {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
 
     &__items {
@@ -29,16 +29,33 @@ export default {};
 
       & li {
         margin: 0 20px;
-        font-size: 1.8rem;
+        font-size: 1.2rem;
 
         & a {
-          text-decoration: none;
-          color: white;
+          color: #fff;
+          text-transform: uppercase;
           font-family: "Roboto", sans-serif;
           font-weight: bold;
-
-          &:hover {
-            color: springgreen;
+          text-decoration: none;
+          letter-spacing: 0.15em;
+          display: inline-block;
+          padding: 5px;
+          position: relative;
+          &:after {
+            background: none repeat scroll 0 0 transparent;
+            bottom: 0;
+            content: "";
+            display: block;
+            height: 2px;
+            left: 50%;
+            position: absolute;
+            background: #fff;
+            transition: width 0.3s ease 0s, left 0.3s ease 0s;
+            width: 0;
+          }
+          &:hover:after {
+            width: 100%;
+            left: 0;
           }
         }
       }
@@ -50,6 +67,14 @@ export default {};
   .header {
     & .nav__items li {
       font-size: 1.2rem;
+    }
+  }
+}
+
+@media screen and (max-width: 370px) {
+  .header {
+    & .nav__items li {
+      font-size: 0.8rem;
     }
   }
 }
